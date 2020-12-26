@@ -19,6 +19,7 @@ body{font-family: 'Poppins', sans-serif, cambria; background: #fbfbfd;}
 .jumbotron{border-radius: 0; }
 h4{font-size: 15px;font-weight: bold;}
 h1{font-size: 15px;}
+.display-4{color:blue;}
 hr{border-top: 2px solid #b4b4b4;}
 .padding{padding-bottom: 2rem;}
 .welcome{width: 75%;margin: 0 auto;padding-top: 2rem;}
@@ -48,6 +49,8 @@ span{color:blue;font-family: cambria;}
   /*====End progress-bar topNav====*/
 
 /*====Media screen====*/
+@media (max-width: 768px){.display-4{font-size: 20px;font-weight: bold;}.small-screen-0001{font-size: 17px;font-weight: bold;margin-top: 40px;border-bottom: 3px solid blue;}.small-screen-0002{font-size:17px;border-bottom: 3px solid blue;font-weight:bold;margin-top: 40px;}
+.small-screen-0003{font-size:20px;text-align: center;font-weight: bold;border-bottom: 3px solid blue;}.small-screen-0004{font-size: 17px;}}
 @media (max-width: 768px){.container-fluid p{font-size: 10px;margin: 10px;}.carousel-item{height: 55vh;}.carousel-caption h1{font-size: 3.0rem;}
 .carousel-caption h5{font-size: .6rem;}.carousel-caption p{font-size: .5rem;}.lead{font-size: 1rem;}.text-block {display: none;}}
 @media (max-width:991px){.site-footer [class^=col-]{margin-bottom:30px}}
