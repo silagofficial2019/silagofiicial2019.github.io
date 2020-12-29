@@ -44,6 +44,9 @@ span{color:blue;font-family: cambria;}
 .img-overlay{background-color:rgb(0, 179, 224);height:auto;width: 100%;}
 .logo{position:relative;padding-left: 75%; }
 .header-text{margin: 15px auto;text-transform: uppercase;font-size: 25px;font-weight: bold;}
+.slider-text-menu1{font-size:80px;font-family: Monotype Corsiva; text-transform: none;}
+.slider-text-menu2{font-size:30px;font-family: Monotype Corsiva; text-transform: none;}
+.slider-text-menu3{font-size:80px;font-family: Monotype Corsiva; text-transform: none;}
  /*====progress-bar topNav====*/
 
 
@@ -59,7 +62,10 @@ span{color:blue;font-family: cambria;}
 /*====Media screen====*/
 @media (max-width: 768px){.display-4{font-size: 20px;font-weight: bold;}.small-screen-0001{font-size: 17px;font-weight: bold;margin-top: 40px;border-bottom: 3px solid blue;}.small-screen-0002{font-size:17px;border-bottom: 3px solid blue;font-weight:bold;margin-top: 40px;}
 .small-screen-0003{font-size:20px;text-align: center;font-weight: bold;border-bottom: 3px solid blue;}.small-screen-0004{font-size: 17px;}
-.small-screen-0005{font-size: 17px;}.logo{background-image: none;}.small-screen-down{}.small-screen-00051 {margin-top: 1px;}}
+.small-screen-0005{font-size: 17px;}
+.slider-text-menu1{font-size:30px;font-family: Monotype Corsiva; text-transform: none;}
+.slider-text-menu2{font-size:15px;font-family: Monotype Corsiva; text-transform: none;}
+.slider-text-menu3{font-size:30px;font-family: Monotype Corsiva; text-transform: none;}.logo{background-image: none;}.small-screen-down{}.small-screen-00051 {margin-top: 1px;}}
 @media (max-width: 768px){.container-fluid p{font-size: 10px;margin: 10px;}.carousel-item{height: 55vh;}.carousel-caption h1{font-size: 3.0rem;}
 .carousel-caption h5{font-size: .6rem;}.carousel-caption p{font-size: .5rem;}.lead{font-size: 1rem;}.text-block {display: none;}}
 @media (max-width:991px){.site-footer [class^=col-]{margin-bottom:30px}}
