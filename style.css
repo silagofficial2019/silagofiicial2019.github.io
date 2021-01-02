@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{font-family: 'Poppins', sans-serif, cambria;}
-.bg-image{background-image:url(Amazing-Blue-Plain-Background.jpg); background-size: cover;background-attachment: fixed; background-position:center;min-height: 100vh;}
-.navbar{text-transform: uppercase;  padding: 12px 32px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;}
-.navbar-light .navbar-nav .nav-link{color: #000;font-family: combria;padding: 30px;}
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link:hover{background:-color:blue;color: #FFD700;transition: .5s;font-weight: bold;}
+.bg-image{background:#f4f4f4; background-size: cover;background-attachment: fixed; background-position:center;min-height: 100vh;}
+.navbar{text-transform: uppercase; padding: 16px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;background: rgba(0,0,0,0.5)!important;position: fixed;width: 100%;}
+.navbar-dark .navbar-nav .nav-link{color: #fff;font-family: combria;padding: 30px;}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{color: #FFD700;transition: .5s;font-weight: bold;}
 .navbar-brand img{height: 5rem;}
-.brand img{height: 6rem; }
+.brand img{height:;width: 100%;}
+.offset:before{display: block;content: '';height: 4rem;}
 .highlight{color: #FFD700;}
+.navbar-toggler:hover{color: #fff;}
 .fixed{background-image:url(img/cspc.png);z-index: -1;}
 .carousel-control-prev, .carousel-control-next{transition: 0.6s ease;border-radius: 0 3px 3px 0;}/*carousel_indicator*/
 .carousel-item{height: 72vh;background-repeat: no-repeat;background-position: center;background-size: cover;}
@@ -16,11 +18,13 @@ body{font-family: 'Poppins', sans-serif, cambria;}
 .carousel-caption h1{text-shadow: .1rem .1rem .8rem black;font-size: 4.8rem;font-weight: 700;letter-spacing: .3rem;}
 .carousel-caption h5{font-size: .9rem;text-shadow: .1rem .1rem .8rem black;}
 .img-fluid{width:50%;height:100%; border: 5px solid  blue; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-.container{background-color: #fff;margin: 10px auto;padding:20px;transition: background-color .5s}
+.container{background-color: #fff;margin: 10px auto;padding: 20px;border-radius: 4px;}
 .jumbotron{border-radius: 0; }
 h4{font-size: 15px;font-weight: bold;}
 .title-news{font-size:2rem;text-transform: uppercase; align-items: center;}
 strong{font-size: 20px; padding-right: 5px;}
+.title-news-par1{font-size: 25px; font-weight: bold;}
+.title-news-par2{font-size: 10px;}
 .display-4{color:blue;}
 hr{border-top: 2px solid #b4b4b4;}
 .padding{padding-bottom: 2rem;}
@@ -45,6 +49,11 @@ hr{border-top: 2px solid #b4b4b4;}
 .card:hover .img-overlay{opacity: 1;}
 .img-overlay{background-color:rgb(0, 179, 224);height:auto;width: 100%;}
 .logo{position:relative;padding-left: 75%; }
+body, p, h2, h5{-webkit-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+-user-select: none;}
+
 .header-text{margin: 15px auto;text-transform: uppercase;font-size: 25px;font-weight: bold;}
 .slider-text-menu1{font-size:80px;font-family: Monotype Corsiva; text-transform: none;}
 .slider-text-menu2{font-size:30px;font-family: Monotype Corsiva; text-transform: none;}
@@ -177,33 +186,34 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {text-decor
 
  .sidenav {
     height: 100%;
-    width: 0;
+    width:0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background: #f4f4f4;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+   padding-top: 60px;
 
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #111;
     display: block;
+    float: left;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color:#FFD700;
 }
 .openbtn{
-	position: fixed;
-	background: #f4f4f4;
+	 position: fixed;
+	 
 	padding: 10px;
 }
 .sidenav .closebtn {
@@ -221,23 +231,115 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {text-decor
 
 }
 @media (max-width: 768px){  
+
  	 .container{
- 	 	margin: 15px auto;
+  
+ 	width: 95%;
+
  	 }
+   .title-news-par1{
+    font-weight: bold;
+    font-size: 16px;
+   }
+   .title-news-par2{
+    font-size: 10px;
+   }
  	h2{
- 		font-size: 18px;
+ 		font-size: 16px;
+    font-weight: bold;
  	}
  	h5{
  		font-size: 14px;
  	}
  	h4{
- 		font-size: 18px; font-weight: bold;
+ 		font-size: 15px; font-weight: bold;
  	}
+  p li{
+    font-size: 14px;
+  }
+  strong{
+    font-size: 14px;
+  }
+.openbtn{
+    padding-left:0;
+   padding-right: 0;
+}
+header{
+  height: 10px;
+  width: 100%;
+}
+#showcase{
+
+  height: 10vh;
+
+}
+footer{
+  background: url(cspc.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.dark{
+  background: rgba(0,0,0, 0.75);
+  color: #fff;
+  height: 100%;
+}
+.disabled{
+  display: none;
+}
+.small-screen-123{
+  display: none;
+}
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
+
+ 
 /*************footer End*****************/
  
+header{
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(cspc.png);
+  height: 100vh;
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+
+}
+#showcase{
+  background: url(Picture1.png);
+  background-position:center;
+  height: 100vh;
+  background-size: cover;
+}
+footer{
+  background: url(cspc.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.dark{
+  background: rgba(0,0,0, 0.75);
+  color: #fff;
+  height: 100%;
+}
+.disabled{
+  color: #fff;
+  padding-right: 30px;
+}
+.disabled:hover{
+  color: #fff;
+  
+}
+.hero{
+  position: absolute;
+  width: 1200px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
