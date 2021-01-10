@@ -18,7 +18,7 @@
 	color: yellow;
 	font-weight: 500;
 }
-.navbar-brand img{height: 5rem;}
+.navbar-brand img{height: 3rem;}
 .brand img{height:;width: 100%;}
 .offset:before{display: block;content: '';height: 4rem;}
 .highlight{color: #FFD700;}
