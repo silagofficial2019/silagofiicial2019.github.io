@@ -2,12 +2,21 @@
 body{font-family: 'Poppins', sans-serif, cambria;}
 *{margin: 0;padding: 0;list-style: none;box-sizing:border-box;text-decoration: none;}
 .bg-image{background:#f4f4f4; background-size: cover;background-attachment: fixed; background-position:center;min-height: 100vh;}
- 
-.navbar{text-transform: uppercase; padding: 16px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;background: rgba(0,0,0,0.5)!important;position: fixed;width: 100%;}
-.navbar-dark .navbar-nav .nav-link{color: #fff;font-family: combria;padding: 30px;}
+.navbar{
+	padding: 15px;
+	letter-spacing: 1.5px;
+	font-family: sans-serif;
+	font-size: 19px;
+}
+.navbar-dark .navbar-nav .nav-link{
+	padding: .7rem;
+	color: #fff;
+}
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{color: #FFD700;transition: .5s;font-weight: bold;}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: yellow;
+	font-weight: 500;
+}
 .navbar-brand img{height: 5rem;}
 .brand img{height:;width: 100%;}
 .offset:before{display: block;content: '';height: 4rem;}
