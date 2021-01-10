@@ -13,6 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<link rel="icon" href="Picture1.png" type="image/x-icon">
+	<style>.smoothScroll {
+  text-decoration: none;
+	font-family: Segoe UI;
+  margin: 24px;
+}</style>
 </head>
 <body data-spa="scroll" data-target="#navbarResponsive">
 
@@ -28,13 +33,13 @@
  	<div class="collapse navbar-collapse" id="navbarResponsive">
  		<ul class="navbar-nav ml-auto">
  			<li class="nav-item active">
- 				<a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+ 				<a class="nav-link smoothScroll" href="#home"><i class="fas fa-home"></i> Home</a>
  			</li>
  			<li class="navbar-item">
  				<a class="nav-link" href="issue.html"><i class="fas fa-book-open"></i> Issue</a>
  			</li>
  			<li class="navbar-item">
- 				<a class="nav-link" href="#contact"><i class="fas fa-user-alt"></i> Contact</a>
+ 				<a class="nav-link smoothScroll" href="#contact"><i class="fas fa-user-alt"></i> Contact</a>
  			</li>
  			 <li class="navbar-item">
  				<a class="nav-link" href="about.html"><i class="fas fa-book"></i> About</a>
@@ -244,7 +249,7 @@ This piece was composed by the inspiration of the unseen Power, invigorated by t
             </div>
         </footer>
  </div-->
-       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
@@ -340,6 +345,27 @@ function smoothScroll(eID) {
         leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
     }
 }
+	 
+	 $(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+
+// Change the speed to whatever you want
+// Personally i think 1000 is too much
+// Try 800 or below, it seems not too much but it will make a difference
 </script>
 <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 </body>
