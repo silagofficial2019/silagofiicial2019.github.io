@@ -5,52 +5,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Silag Official</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
-		<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<link rel="icon" href="Picture1.png" type="image/x-icon">
 </head>
-<body>
-	<!--div class="alert alert-info">
-		<strong>Sorry, </strong> the server of this website is temporary closed.
-	</div-->
+<body data-spa="scroll" data-target="#navbarResponsive">
 
- <header class="responsive">
-	 <div id="home">
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+<div id="home">
+ <div class="container-fluid header">
+ 	<div class="row">
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
  	<a href="#" class="navbar-brand"><img src="Picture1.png">S<span class="highlight">î</span>LAG</a>
  	<button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
- 		<span class="navbar-toggler-icon"></span>
+ 		<i class="fas fa-bars" style="border: none;"></i>
  	</button>
 
  	<div class="collapse navbar-collapse" id="navbarResponsive">
  		<ul class="navbar-nav ml-auto">
- 			<li class="navbar-item active">
- 				<a class="nav-link" href="#home">Home</a>
+ 			<li class="nav-item active">
+ 				<a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
  			</li>
  			<li class="navbar-item">
- 				<a class="nav-link" href="issue.html">Issue</a>
+ 				<a class="nav-link" href="issue.html"><i class="fas fa-book-open"></i> Issue</a>
  			</li>
  			<li class="navbar-item">
- 				<a class="nav-link" href="#contact">Contact</a>
+ 				<a class="nav-link" href="#contact"><i class="fas fa-user-alt"></i> Contact</a>
  			</li>
  			 <li class="navbar-item">
- 				<a class="nav-link" href="about.html">About</a>
+ 				<a class="nav-link" href="about.html"><i class="fas fa-book"></i> About</a>
  			</li> 
  		</ul>
  	</div>
- 
-</nav>
-	 </div>
- </header>
 
+ </nav>
+
+ </div>
+  
+ 	<div class="text-center" style="margin-top: 100px;">
+ 	 	<div class="box">
+ 	 		<div class="col-12">
+ 	 			<div class="text_1 wow animated fadeInDown">Welcome to S<span class="highlight">î</span>lag</div>
+ 	 		</div>
+ 	 		 
+ 	 		<div class="text-block wow animated fadeInRight">
+		    <p class="wow animated fadeInLeft"><img src="Picture1.png">THE OFFICIAL STUDENT-COMMUNITY PUBLICATION OF CAMARINES SUR POLYTECHNIC COLLEGES-BUHI CAMPUS<img src="cspc.jpg"></p>
+		  </div>
+
+ 	 	</div>
+ 	</div>
+</div>
+</div>
  <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
+
  
+
  
 <div class="container container-header">
 	<div class="row text-center padding" style="margin-top: 10%;">
@@ -71,12 +86,10 @@
 	</div>
 </div>
 
-
- 
 <div class="container container-header" style="margin-top: 10%;">
 	<div class="row">
 		<div class="col-md-6">
-			<div class="small-screen-0003  largers-screenanimated wow slideInLeft">Goals and Objectives</div>
+			<div class="small-screen-0003  largers-screen animated wow slideInLeft">Goals and Objectives</div>
 			<div class="small-screen-0004 animated wow slideInLeft" >1. Produce professionally competent graduates who are responsible Filipino and global citizens by providing quality teaching and learning environment;</div>
 			<div class="small-screen-0004 animated wow slideInLeft" style="margin-top: 15px;">2. Address regional and national science and technology concerns by institutionalizing and integrating research-based programs in al Colleges;</div>
 			<div class="small-screen-0004 animated wow slideInLeft" style="margin-top: 15px;">3. Improve the quality of lives through the conduct of demand-driven and research-based extension services; and</div>
@@ -128,7 +141,7 @@ Belov’d President, keep us by your side.
 		</div>
 	 
 	<div class="col-xs-12 col-md-6">
-		<img src="pres.png" class="img-fluid animated wow slideInRight" height="100">
+		<img src="Pres.png" class="img-fluid animated wow slideInRight" height="100">
 		 
 	</div>
 	</div>		 
@@ -186,7 +199,7 @@ This piece was composed by the inspiration of the unseen Power, invigorated by t
 </div>
 
 </div>
-<div id="contact"></div>
+<div id="contact" class="offset"></div>
 <footer class="new_footer_area bg_color">
             <div class="new_footer_top">
                 <div class="container">
@@ -199,22 +212,7 @@ This piece was composed by the inspiration of the unseen Power, invigorated by t
                                 </form>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-                                <!--p>Download the full article for free.</p>
-								<a class="btn btn-primary" type="button" href="#">Click Download</a--> 
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><a href="https://mail.google.com/mail/u/0/#search/silagofficial%40gmail.com">silagofficial@gmail.com</a></li>
-                                 	<li><a href="#">www.facebook.com/silag</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                     
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
@@ -245,9 +243,7 @@ This piece was composed by the inspiration of the unseen Power, invigorated by t
                 </div>
             </div>
         </footer>
- </div>
-       
- 
+ </div-->
        
 <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -294,6 +290,57 @@ $(document).ready(function(){
 
 document.addEventListener("contextmenu", function(freelancerNasim){
 freelancerNasim.preventDefault();
-});-->
+});
+
+//scroll
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+
+function elmYPosition(eID) {
+    var elm = document.getElementById(eID);
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } return y;
+}
+
+
+function smoothScroll(eID) {
+    var startY = currentYPosition();
+    var stopY = elmYPosition(eID);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+        scrollTo(0, stopY); return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+        for ( var i=startY; i<stopY; i+=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+        } return;
+    }
+    for ( var i=startY; i>stopY; i-=step ) {
+        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+    }
+}
+</script>
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 </body>
 </html>
